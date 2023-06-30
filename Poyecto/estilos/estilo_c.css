@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    outline: none;
+    text-decoration: none;
+    border:none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:rgba(200,205,209);
+    height:100%;
+    width: 100%;
+}
+/* Barra de navegacion lateral */
+nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    background: rgb(214, 213, 213);
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+nav a:hover{
+    background: rgb(158, 158, 228);
+    display: flex;
+}
+nav:hover{
+    width: 230px;
+    transition: all 0.5s ease;
+    display: flex;
+}
+a{
+    position: relative;
+    color: #086b92;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    width: 300px;
+    padding: 10px;
+}
+.logo_img{
+    padding-left: 20px;
+    height: 60px;
+    width: 80px;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+    display: flex;
+}
+.logo span{
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.fas{
+    position: relative;
+    width: 10px;
+    display: flex;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+.item{
+    position:relative;
+    top: 12px;
+    margin-left: 10px;
+}
+.arriba{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    color:#086b92;
+    display: flex;
+    gap: 10px;
+}
+.logoc{
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    width: 420px;
+}
+.contacto{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.contacto h2{
+    color: #A51C30;
+    font-size: 38px;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.logod{
+    height:70px;
+    width:200px ;
+}
+.logou{
+    align-items:center;
+    height: 200px;
+    width: 200px;
+}
+
+@media (min-width:768px){
+    .contacto{
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .contacto h2{
+        color: #A51C30;
+        font-size: 30px;
+    }
+    .logod{
+        height:70px;
+        width:200px;
+    }
+}
+@media (min-width:390px){
+    .contacto{
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .contacto h2{
+        color: #A51C30;
+        font-size: 28px;
+    }
+    .logod{
+        height:40px;
+        width:100px ;
+    }
+    .logoc{
+        align-items: center;
+        text-align: center;
+        height: 120px;
+        width: 390px;
+    }
+}
